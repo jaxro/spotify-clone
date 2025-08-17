@@ -1,125 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
-body{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
-
-.left{
-    width: 25vw;
-    padding: 10px;
-}
-.right{
-    width: 75vw;
-}
-.home{
-    
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
-.home ul li{
-    display: flex;
-    width: 14px;
-    list-style: none;
-    gap: 15px;
-    padding-top: 14px;
-    font-weight: bold;
+.left {
+  width: 25vw;
+  padding: 10px;
 }
-.heading{
-    display: flex;
-    width: 100%;
-    gap: 15px;
-    padding-top: 14px;
-    padding: 23px 14px;
-    font-weight: bold;
-    align-items: center;
-    font-size: 13px;
+.right {
+  width: 75vw;
 }
-.heading img{
-   width: 30px;
-}
-.library{
-    min-height: 80vh;
-    position: relative;
-}
-.footer{
-    display: flex;
-    font-size: 10px;
-    color: grey;
-    gap: 13px;
-    position: absolute;
-    bottom: 0;
-    padding: 34px 0;
-}
-.footer a{
-    color: gray;
+.home {
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color:rgb(34, 34, 34) ;
+.home ul li {
+  display: flex;
+  width: 14px;
+  list-style: none;
+  gap: 15px;
+  padding-top: 14px;
+  font-weight: bold;
+}
+.heading {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  padding-top: 14px;
+  padding: 23px 14px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 13px;
+}
+.heading img {
+  width: 30px;
+}
+.library {
+  min-height: 80vh;
+  position: relative;
+}
+.footer {
+  display: flex;
+  font-size: 10px;
+  color: grey;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 34px 0;
+}
+.footer a {
+  color: gray;
 }
 
-.svg-img{
-    width: 15px;
-}
-.header > *{
-    padding: 20px;
-}
-.right{
-    margin:16px 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+  height: 72px;
 }
 
-.spotifyPlaylists{
-    padding: 16px;
+.svg-img {
+  width: 15px;
 }
-.cardContainer{
-    margin: 30px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+.header > * {
+  padding: 20px;
+
 }
-.card{
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
-    background-color: #252525;
-    position: relative;
+.right {
+  margin: 16px 0;
 }
 
-.card > *{
-    padding-top: 10px;
+.spotifyPlaylists {
+  padding: 16px;
+}
+.cardContainer {
+  margin: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+.card {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #252525;
+  position: relative;
 }
 
-.card img{
-    width: 100%;
-    object-fit: contain;
-    overflow: hidden;
+.card > * {
+  padding-top: 10px;
+}
 
+.card img {
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .play {
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    background-color: #1fd764;
-    border-radius: 50%;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 230px; /* Start lower (hidden position) */
-    right: 17px;
-    opacity: 0;
-    transition: all 0.6s ease-out; /* smooth animation */
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: #1fd764;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 230px; /* Start lower (hidden position) */
+  right: 17px;
+  opacity: 0;
+  transition: all 0.6s ease-out; /* smooth animation */
 }
 
 /* Trigger animation when hovering on the card */
 .card:hover .play {
-    opacity: 1;
-    top: 168px; /* Final visible position */
+  opacity: 1;
+  top: 168px; /* Final visible position */
+}
+button >*{
+    margin: 0 12px;
+    
+}
+.signupbtn {
+  background-color: rgb(34, 34, 34);
+  color: rgb(82, 82, 82);
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.signupbtn:hover {
+  font-size: 17px;
+  color: white;
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+    margin-left: 12px;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
 }
