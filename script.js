@@ -36,9 +36,7 @@ async function getSongs() {
 
 async function main() {
   let songs = await getSongs();
-  console.log("Songs found:", songs);
-
-  //display all the song in songList
+  //display all the song in the play list
   let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]; 
   // [0] because getElementsByTagName returns an HTMLCollection
 
@@ -54,7 +52,6 @@ async function main() {
                 <span>Play Now</span>
                 <img src="play.svg" alt="" class="invert music-play"> 
             </div>
-            
         </li>
     `;
   }
