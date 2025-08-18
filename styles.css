@@ -73,6 +73,7 @@ body {
 }
 .right {
   margin: 16px 0;
+  position: relative;
 }
 
 .spotifyPlaylists {
@@ -155,4 +156,67 @@ button >*{
 .loginbtn:hover{
     font-weight: bold;
     font-size: 17px;
+}
+
+.playbar{
+  position: fixed;
+  bottom: 30px;
+  background-color: rgb(203, 203, 203);
+  width: 75vw;
+  padding: 12px;
+}
+.songbuttons{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.mySongButtons{
+  width: 30px;
+
+}
+.songList{
+  height:544px;
+  overflow: auto;
+  margin-bottom:44px ;
+}
+.songList .info{
+  font-size: 13px;
+  width: 344px;
+}
+
+.songList ul{
+  padding: 0 12px;
+  
+}
+.songList ul li{
+  list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px 0;
+  border: 1px solid white;
+  margin: 12px 0;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+.music-img{
+  width: 30px;
+}
+.playnow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.playnow span{
+   width: 64px;;
+   font-size: 15px;
+   padding: 12px;
+
+}
+
+.music-play{
+  width: 25px;
 }

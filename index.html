@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -25,6 +26,24 @@
                     <h2>
                         Your Library
                     </h2>
+                </div>
+                <div class="songList">
+                    <ul >
+                        <!-- dummy 
+                        <li>
+                            <img src="music.svg" alt="" class="music-img invert">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artists</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img src="play.svg" alt="" class="invert music-play"> 
+                            </div>
+                           
+                        </li>
+                        --> 
+                    </ul>
                 </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -53,21 +72,36 @@
                 <div class="cardContainer">
                     <div class="card">
                         <div class="play">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" fill="#000" stroke-linejoin="round" />
-                                </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" fill="#000"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <img src="https://images.squarespace-cdn.com/content/v1/5c292bfdc258b4b91b8021a5/1587833888867-28W7VRQBVPEGUPAQWP24/LostIndieClassicsVol1.2.jpg" alt="song">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5c292bfdc258b4b91b8021a5/1587833888867-28W7VRQBVPEGUPAQWP24/LostIndieClassicsVol1.2.jpg"
+                            alt="song">
                         <h2>Biggest Hits</h2>
                         <p>Best of the Indian Indie scene. Cover - Faheem Abdullah</p>
                     </div>
-                    
                 </div>
-                <script src="script.js"></script>
-                
+                <div class="playbar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img src="previous.svg" alt="previous" class="mySongButtons prevbtn">
+                        <img src="play.svg" alt="play" class="mySongButtons playbtn">
+                        <img src="next.svg" alt="next" class="mySongButtons nextbtn">
+                    </div>
+
+                    <div class="songtime">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
