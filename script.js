@@ -129,7 +129,7 @@ async function main() {
   document.querySelector(".close").addEventListener("click", () => {
     document.querySelector(".left").style.left = "-120%";
   });
-  
+
   //add eventlistnenr to previous and next
   previous.addEventListener("click", () => {
     console.log("Previous clicked");
@@ -161,6 +161,10 @@ async function main() {
     }
   });
 
+  //add event to volume
+  document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
+    currentSong.volume=parseInt(e.target.value)/100;
+  })
   /* Create audio object for the first song
   let audio = new Audio("/songs/" + songs[0] + ".mp3"); // ✅ Need full path back
 
