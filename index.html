@@ -13,6 +13,9 @@
 <body>
     <div class="container flex bg-black">
         <div class="left">
+            <div class="close">
+                <img width="30" src="cross.svg" alt="cross" class="invert">
+            </div>
             <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo"><img src="logos.svg" width="45" alt="logos" class="invert"></div>
                 <ul>
@@ -28,7 +31,7 @@
                     </h2>
                 </div>
                 <div class="songList">
-                    <ul >
+                    <ul>
                         <!-- dummy 
                         <li>
                             <img src="music.svg" alt="" class="music-img invert">
@@ -42,7 +45,7 @@
                             </div>
                            
                         </li>
-                        --> 
+                        -->
                     </ul>
                 </div>
                 <div class="footer">
@@ -59,9 +62,13 @@
         <div class="right bg-grey rounded">
             <div class="header">
                 <div class="nav">
-                    <img src="left.svg" alt="left" class="invert svg-img">
-                    <img src="right.svg" alt="right" class="invert svg-img">
+                    <div class="hamburgerContainer">
+                        <img width="40" src="hamburger.svg" alt="hamburger" class="invert hamburger">
+                        <img src="left.svg" alt="left" class="invert svg-img">
+                        <img src="right.svg" alt="right" class="invert svg-img">
+                    </div>
                 </div>
+
                 <div class="buttons">
                     <button class="signupbtn">Sign up</button>
                     <button class="loginbtn">Log in</button>
@@ -83,6 +90,20 @@
                         <h2>Biggest Hits</h2>
                         <p>Best of the Indian Indie scene. Cover - Faheem Abdullah</p>
                     </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" fill="#000"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://images.squarespace-cdn.com/content/v1/5c292bfdc258b4b91b8021a5/1587833888867-28W7VRQBVPEGUPAQWP24/LostIndieClassicsVol1.2.jpg"
+                            alt="song">
+                        <h2>Biggest Hits</h2>
+                        <p>Best of the Indian Indie scene. Cover - Faheem Abdullah</p>
+                    </div>
+
                 </div>
                 <div class="playbar">
                     <div class="seekbar">
@@ -92,13 +113,13 @@
                     </div>
                     <div class="abovebar">
                         <div class="songinfo">
-                            </div>
-                            <div class="songbuttons">
-                                <img src="previous.svg" alt="previous" class="mySongButtons prevbtn" id="previous">
-                                <img src="play.svg" alt="play" class="mySongButtons playbtn" id="play">
-                                <img src="next.svg" alt="next" class="mySongButtons nextbtn" id="next">
-                            </div>
-                            <div class="songtime"></div>
+                        </div>
+                        <div class="songbuttons">
+                            <img width="35" src="previous.svg" alt="previous" class="prevbtn" id="previous">
+                            <img width="35" src="play.svg" alt="play" class="playbtn" id="play">
+                            <img width="35" src="next.svg" alt="next" class="nextbtn" id="next">
+                        </div>
+                        <div class="songtime"></div>
                     </div>
                 </div>
             </div>
