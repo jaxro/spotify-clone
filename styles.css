@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root{
+  --a:0;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -98,8 +101,14 @@ body {
   border-radius: 5px;
   background-color: #252525;
   position: relative;
+  transition: all .9s;
 }
 
+.card:hover{
+  background-color: rgb(56, 56, 56);
+  cursor: pointer;
+  --a:1;
+}
 .card > * {
   padding-top: 10px;
 }
@@ -108,6 +117,12 @@ body {
   width: 100%;
   object-fit: contain;
   overflow: hidden;
+}
+.card img.poster-img {
+  width: 100%;           /* Card ke width ke according stretch */
+  height: 200px;         /* Sab images same height */
+  object-fit: cover;     /* Center se crop hoga, stretch/distort nahi */
+  border-radius: 5px;    /* (optional) thoda rounded look */
 }
 
 .play {
@@ -122,13 +137,12 @@ body {
   justify-content: center;
   top: 230px; /* Start lower (hidden position) */
   right: 17px;
-  opacity: 0;
+  opacity: var(--a);
   transition: all 0.6s ease-out; /* smooth animation */
 }
 
 /* Trigger animation when hovering on the card */
 .card:hover .play {
-  opacity: 1;
   top: 168px; /* Final visible position */
 }
 button > * {
@@ -337,5 +351,20 @@ button > * {
   .timevol {
     flex-direction: column;
     gap: 13px;
+  }
+}
+@media (max-width: 400px){
+  .card {
+    width: 84vw;
+  }
+}
+@media (max-width: 768px) {
+  .card img.poster-img {
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .card img.poster-img {
+    height: 120px;
   }
 }
